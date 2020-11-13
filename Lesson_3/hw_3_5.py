@@ -27,7 +27,7 @@ def my_sum():
         for num in my_list:
             try:
                 my_num = float(num)
-                sum = sum + my_num
+                sum += my_num
             except ValueError as err:
                 interrupt = True
                 break
@@ -37,4 +37,4 @@ def my_sum():
     return sum
 
 
-print(my_sum())
+print('Function result:', my_sum())

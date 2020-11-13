@@ -45,11 +45,11 @@ my_email = input('Введите Ваш адрес эл. почты: ')
 my_phone = input('Введите Ваш телефон: ')
 
 u_profile = user_profile(l_name=my_lname, f_name=my_fname, dob=my_dob, phone=my_phone, email=my_email, city=my_city)
-print(u_profile)
+print('Вы ввели: ', u_profile)
 print()
 
 u_profile2 = user_profile2(lname=my_lname, fname=my_fname)  # используем часть именованных аргументов
-print(u_profile2)
+print('Ввели только именованные переменные: ', u_profile2)
 print()
 
 profile_dict = {}  # объявляем пустой словарь
@@ -57,10 +57,10 @@ profile_dict['Имя'] = my_fname
 profile_dict['Фамилия'] = my_lname
 profile_dict['Дата рождения'] = my_dob
 u_profile2 = user_profile2(**profile_dict)  # передача значений словаря в функцию
-print(u_profile2)  # вывод значения функции в виде словаря
+print('Выводим ввиде словаря: ', u_profile2)  # вывод значения функции в виде словаря
 print()
 
 user_data = ''  # вывод данных о пользователе одной строкой, распаковка из словаря
 for key in u_profile2.keys():
     user_data = f' {user_data}{key}: {u_profile2.get(key)}, '
-print(user_data)
+print('Выводим ввиде сформированной строки: ', user_data)
