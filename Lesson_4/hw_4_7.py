@@ -24,5 +24,5 @@ def fact(n):
 
 num = int(input('Введите значение факториала, который нужно вычислить: '))
 for i in fact(num):
-    print(' ', i)
+    print(i)
 
