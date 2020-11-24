@@ -40,7 +40,7 @@ class Handle(Stationery):
     def draw(self, color):
         super().draw()  # наследуем родительскую функциональность
         self.color = color
-        print(f'Color is {self.color}')
+        print(f'{self.title} color is {self.color}')
 
 
 my_pen = Pen()
