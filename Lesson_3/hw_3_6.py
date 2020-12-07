@@ -11,7 +11,7 @@ Exercise 6.
 '''
 
 def int_func(l_text):
-    return l_text.title()
+    return l_text.title()  # правильнее использовать capitalize
 
 
 user_str = input('Введите строку со словами латиницей: ')

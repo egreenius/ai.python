@@ -7,7 +7,7 @@ Exercise 1.
 '''
 
 
-def division_function(dividend, denominator):
+def division_function(dividend, denominator):  # можно сразу использовать блок try ... except ...
     '''
     Возвращает частное от деления двух аргументов
 

@@ -17,5 +17,5 @@ with open('staff_list.txt', 'r') as my_file:
     for line in my_file:
         i += 1
         ave_inc += float(line.split()[1])
-    ave_inc = ave_inc/i
+    ave_inc = ave_inc/i  # сумму можно посчитать с помощью функции sum, а вместо i использовать функцию len от количества строк
     print(f'{ave_inc:.2f}')
