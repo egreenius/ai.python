@@ -11,4 +11,6 @@ from sys import argv
 
 file_path, m_hour, rate, bonus = argv
 
+# здесь нужно было использовать функцию расчета заработной платы, а потом в теле программы ее использовать, например, через
+# my_func_salary(*map(int, arg[1:]))
 print(f'Ваша заработная плата составляет: {m_hour} * {rate} + {bonus} = {(float(m_hour)*float(rate) + float(bonus)):.2f} !')

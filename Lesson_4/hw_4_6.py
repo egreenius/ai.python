@@ -16,7 +16,7 @@ from itertools import cycle
 
 start_list = int(input('Введите целое число - начало списка: '))
 end_list = int(input('Введите целое число - конец списка: '))
-for el in count(start_list):
+for el in count(start_list):  # для себя - посмотри что делает count в itertools
     if el > end_list:
         break
     else:

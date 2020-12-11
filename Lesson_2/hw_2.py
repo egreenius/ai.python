@@ -23,7 +23,7 @@ Exercise 2
 user_input = input('Введите данные Вашего списка через запятую: ')
 user_list = user_input.split(',')
 print('Ваш список: ', user_list)
-for i in range(len(user_list)):
+for i in range(len(user_list)):  # можно использовать также такую идею: for i in range(1, len(user_list), 2):
     if i % 2 != 0:
         user_list[i-1], user_list[i] = user_list[i], user_list[i-1]
 print('Наш список: ', user_list)
@@ -93,7 +93,7 @@ while True:  # Организуем бесконечный цикл для по�
     except ValueError as err:
         print(f'Вы ввели строку: {u_vote}. Введите целое число')
         continue
-for rate in my_rates:
+for rate in my_rates:  # должно работать следующее: i = 0 (for n in my_rates: if rate <= n i+=1) my_rates.insert(i, rate)
     if u_vote > rate:
         my_rates.insert(my_rates.index(rate), u_vote)
         break
